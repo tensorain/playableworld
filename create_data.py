@@ -9,3 +9,7 @@ env = gym.make(
     frameskip=4,                    # one stored frame = 4 emulator ticks (default, keep it)
     repeat_action_probability=0.0,  # CRITICAL — sticky actions off, so logged action == executed action
 )
+
+obs, info = env.reset()          # starts an episode; obs = (210,160) uint8 grayscale frame
+
+obs, _, terminated, truncated, info = env.step(action)
