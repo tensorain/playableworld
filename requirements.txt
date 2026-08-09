@@ -1,0 +1,4 @@
+gymnasium[atari]
+opencv-python-headless
+wandb
+imageio
